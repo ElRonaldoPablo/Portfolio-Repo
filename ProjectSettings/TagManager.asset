@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Slope
+  - Ceiling
+  - UnstableGround
+  - Enemy
+  - Pooka
+  - Jump1
+  - Jump2
+  - Jump3
+  - Jump4
+  - RevolverBullet
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Pooka
+  - Ground
+  - Enemy
+  - Particles
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackgroundFar
+    uniqueID: 1741386487
+    locked: 0
+  - name: Background
+    uniqueID: 2061175597
+    locked: 0
+  - name: Ground
+    uniqueID: 1227414047
+    locked: 0
+  - name: Enemy
+    uniqueID: 646577975
+    locked: 0
+  - name: Player
+    uniqueID: 2276796391
+    locked: 0
+  - name: GroundFront
+    uniqueID: 4051361175
+    locked: 0
+  - name: Particles
+    uniqueID: 2442981789
+    locked: 0
+  - name: Foreground
+    uniqueID: 1711083731
+    locked: 0
