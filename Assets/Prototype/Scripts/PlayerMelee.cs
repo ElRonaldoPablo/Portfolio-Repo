@@ -33,44 +33,44 @@ public class PlayerMelee : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (pMovementControls.meleeValue <= 0.0f)
-        {
-            canAttack = true;
-        }
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if (pMovementControls.meleeValue <= 0.0f)
+    //    {
+    //        canAttack = true;
+    //    }
 
-        if (Time.time >= nextAttackTime)
-        {
-            if (pMovementControls.meleeValue >= 1.0f && canAttack)
-            {
-                StartCoroutine(Attack());
-                nextAttackTime = Time.time + 1.0f / attackRate;
-            }
-        }
+    //    if (Time.time >= nextAttackTime)
+    //    {
+    //        if (pMovementControls.meleeValue >= 1.0f && canAttack)
+    //        {
+    //            StartCoroutine(Attack());
+    //            nextAttackTime = Time.time + 1.0f / attackRate;
+    //        }
+    //    }
 
         
-    }
+    //}
 
-    IEnumerator Attack()
-    {
-        canAttack = false;
-        animator.SetTrigger("isAttacking");
+    //IEnumerator Attack()
+    //{
+    //    canAttack = false;
+    //    animator.SetTrigger("isAttacking");
 
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0.0f, enemyLayers);
+    //    Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, attackArea, 0.0f, enemyLayers);
 
-        foreach(Collider2D enemy in hitEnemies)
-        {
-            //Debug.Log("We hit " + enemy.name);
+    //    foreach(Collider2D enemy in hitEnemies)
+    //    {
+    //        //Debug.Log("We hit " + enemy.name);
 
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-        }
+    //        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+    //    }
 
-        yield return new WaitForSeconds(0.01f);
-        //Debug.Log("Attacked!");
+    //    yield return new WaitForSeconds(0.01f);
+    //    //Debug.Log("Attacked!");
 
-    }
+    //}
 
     private void OnDrawGizmos()
     {
