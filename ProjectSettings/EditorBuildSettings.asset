@@ -6,28 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Prototype/Scenes/Build/Front End/SplashScreens.unity
+    path: Assets/Prototype/SplashScreens.unity
     guid: 65d94c2477227c14a91076c36b6fdedb
   - enabled: 1
-    path: Assets/Main/Scenes/MainMenu.unity
+    path: Assets/Prototype/Scenes/MainMenu.unity
     guid: 1ed71f1ffa2d4594796f190272b50c82
   - enabled: 1
-    path: Assets/Prototype/Scenes/Build/Test/Continue.unity
+    path: Assets/Prototype/Continue.unity
     guid: a97c45579c1bdf748837e6fa7d05b6f2
   - enabled: 1
-    path: Assets/Prototype/Scenes/Build/Test/New.unity
+    path: Assets/Prototype/New.unity
     guid: 7f257295717201949b46b149b5eca690
   - enabled: 1
-    path: Assets/Prototype/Scenes/Build/Test/EndCinematic.unity
+    path: Assets/Prototype/EndCinematic.unity
     guid: 47c5e1303fd66664781ace9e3b169349
   - enabled: 1
     path: Assets/Prototype/Scenes/Gyms/Movement.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Prototype/Scenes/Build/Test/Options.unity
+    path: Assets/Prototype/Options.unity
     guid: 1945bd92298f8a14a86e4172e0a99e7e
   - enabled: 1
-    path: Assets/Prototype/Scenes/Build/Test/Extras.unity
+    path: Assets/Prototype/Extras.unity
     guid: f8b3757bada6fa54780e59bd0571b008
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 4cde30e765d954549a9decbc89b878fb,
