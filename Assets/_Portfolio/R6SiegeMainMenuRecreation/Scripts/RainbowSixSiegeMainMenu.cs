@@ -7,6 +7,17 @@ using DG.Tweening;
 
 public class RainbowSixSiegeMainMenu : MonoBehaviour
 {
+    [Header("Test")]
+    [SerializeField] private Image _mockUp;
+    [SerializeField] private Image _mockUpButtonImage;
+    private bool _isMockUpOn = true;
+
+    [Space]
+
+    [SerializeField] private GameObject[] _uiElements;
+    [SerializeField] private Image _uiButtonImage;
+    private bool _isUIOn = true;
+
     [Header("Splash")]
     [SerializeField] private GameObject _splashPanel;
     [SerializeField] private Image _splashBackgroundImage;
@@ -30,6 +41,9 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     {
         //InitializeSplashSequence();
         //PlaySplashSequence();
+
+        _isMockUpOn = true;
+        _isUIOn = true;
     }
 
     // Update is called once per frame
@@ -37,6 +51,50 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     {
         
     }
+
+    #region Mockup
+
+    public void ToggleMockup()
+    {
+        if (_isMockUpOn)
+        {
+            _mockUp.gameObject.SetActive(false);
+            _isMockUpOn = false;
+            _mockUpButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+        else
+        {
+            _mockUp.gameObject.SetActive(true);
+            _isMockUpOn = true;
+            _mockUpButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+    }
+
+    public void ToggleUIElements()
+    {
+        if (_isUIOn)
+        {
+            foreach (GameObject element in _uiElements)
+            {
+                element.SetActive(false);
+            }
+
+            _isUIOn = false;
+            _uiButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+        else
+        {
+            foreach (GameObject element in _uiElements)
+            {
+                element.SetActive(true);
+            }
+
+            _isUIOn = true;
+            _uiButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+    }
+
+    #endregion
 
     #region Splash
 
