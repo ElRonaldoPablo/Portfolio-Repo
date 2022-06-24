@@ -66,6 +66,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b28941717fdae2f418ccb97c8fb53a2a, type: 3}
   - {fileID: 21300000, guid: 193f8322ae5106549a29a4208b98786a, type: 3}
   - {fileID: 21300000, guid: a9b57172228047d47ba4d6a63f7b22ba, type: 3}
+  - {fileID: 21300000, guid: 596ba61739ebc6e44a696e211bc49e13, type: 3}
   - {fileID: 21300000, guid: 8da78ea7f6704d142a41b25a3532b0a2, type: 3}
   - {fileID: 21300000, guid: 3fc721b73dfe54742a1bafaf01a615be, type: 3}
   - {fileID: 21300000, guid: 54cebaf77505485479c56abd43ff2e74, type: 3}
@@ -78,6 +79,7 @@ SpriteAtlas:
   - tex_playlist_button_icon
   - tex_circle_empty
   - tex_box_highlight
+  - tex_button_lightsweep
   - tex_circle_fill
   - tex_arrow
   - tex_invite_button

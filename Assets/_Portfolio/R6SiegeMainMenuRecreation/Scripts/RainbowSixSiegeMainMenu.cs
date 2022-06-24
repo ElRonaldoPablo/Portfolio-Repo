@@ -32,6 +32,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private Image _playlistButtonHighlight;
     [SerializeField] private Image _playlistButtonFill;
     [SerializeField] private Image _playlistButtonIcon;
+    [SerializeField] private RectTransform _playlistButtonLightSweep;
 
     private Sequence _completePlaylistHighlightSequence;
     private Sequence _completePlaylistUnhighlightSequence;
@@ -163,6 +164,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _playlistButtonFill.color = new Color(0.1882f, 0.6f, 0.8078432f, 1.0f);
         _playlistButtonIcon.transform.localScale = Vector3.one;
         _playlistButtonHighlight.gameObject.SetActive(false);
+        _playlistButtonLightSweep.transform.localPosition = new Vector3(-100.0f, 10.0f, 0.0f);
     }
 
     public void PlayPlaylistButtonHighlightSequence()
@@ -185,12 +187,11 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
             .Join(_playlistButtonHighlight.DOFade(1.0f, 0.2f))
             .Pause();
 
-        //Sequence lightSweep = DOTween.Sequence();
-        //lightSweep
-        //    .AppendCallback(null)
-        //    .Append(null)
-        //    .Join(null)
-        //    .Pause();
+        Sequence lightSweep = DOTween.Sequence();
+        lightSweep
+            .AppendInterval(0.15f)
+            .Append(_playlistButtonLightSweep.DOLocalMoveX(110.0f, 0.5f))
+            .Pause();
 
         Sequence fill = DOTween.Sequence();
         fill
@@ -207,7 +208,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _completePlaylistHighlightSequence
             .AppendCallback(InitializePlaylistButton)
             .Append(highlight)
-            /*.Join(lightSweep)*/ // TO-DO
+            .Join(lightSweep)
             .Join(fill)
             .Join(icon)
             .Pause();
@@ -245,7 +246,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
     private void PlaylistButtonFillFading()
     {
-        _playlistButtonFill.DOFade(0.25f, 1.0f).SetLoops(-1, LoopType.Yoyo);
+        _playlistButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo);
     }
 
     #endregion

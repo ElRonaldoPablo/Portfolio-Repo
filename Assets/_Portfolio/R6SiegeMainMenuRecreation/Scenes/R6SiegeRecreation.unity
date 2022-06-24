@@ -275,6 +275,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50357067}
   m_CullTransparentMesh: 1
+--- !u!224 &60231523 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8007616926163695995, guid: 142e0dccafa72e34b84844c290bfbacf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1417903959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65267999
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,6 +3535,16 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1645050843}
+    - target: {fileID: 8007616926163695995, guid: 142e0dccafa72e34b84844c290bfbacf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007616926163695995, guid: 142e0dccafa72e34b84844c290bfbacf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9187667962593929128, guid: 142e0dccafa72e34b84844c290bfbacf,
         type: 3}
       propertyPath: m_Name
@@ -4413,6 +4429,7 @@ MonoBehaviour:
   _playlistButtonHighlight: {fileID: 940478942}
   _playlistButtonFill: {fileID: 1417903961}
   _playlistButtonIcon: {fileID: 2045233817}
+  _playlistButtonLightSweep: {fileID: 60231523}
 --- !u!1 &1655920707
 GameObject:
   m_ObjectHideFlags: 0
