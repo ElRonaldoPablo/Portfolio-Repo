@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class RainbowSixSiegeMainMenu : MonoBehaviour
 {
-    [Header("Test")]
+    [Header("Debug")]
     [SerializeField] private Image _mockUp;
     [SerializeField] private Image _mockUpButtonImage;
     private bool _isMockUpOn = true;
@@ -18,6 +18,12 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private Image _uiButtonImage;
     private bool _isUIOn = true;
 
+    [Space]
+
+    [SerializeField] private AudioSource _BGM;
+    [SerializeField] private Image _BGMButtonImage;
+    private bool _isBGMPlaying = true;
+
     [Header("Splash")]
     [SerializeField] private GameObject _splashPanel;
     [SerializeField] private Image _splashBackgroundImage;
@@ -26,6 +32,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _projectDetailsString;
 
     private Sequence _completeSplashSequence;
+
+    [Header("BGM")]
 
     [Header("Playlist")]
     [SerializeField] private GameObject _playlistButton;
@@ -43,6 +51,9 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         //InitializeSplashSequence();
         //PlaySplashSequence();
 
+        _BGM.Play();
+
+        _isBGMPlaying = true;
         _isMockUpOn = true;
         _isUIOn = true;
     }
@@ -53,7 +64,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         
     }
 
-    #region Mockup
+    #region Debug Toggles
 
     public void ToggleMockup()
     {
@@ -92,6 +103,22 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
             _isUIOn = true;
             _uiButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+    }
+
+    public void ToggleBackgroundMusic()
+    {
+        if (_isBGMPlaying)
+        {
+            _BGM.Pause();
+            _isBGMPlaying = false;
+            _BGMButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+        else
+        {
+            _BGM.Play();
+            _isBGMPlaying = true;
+            _BGMButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
         }
     }
 
