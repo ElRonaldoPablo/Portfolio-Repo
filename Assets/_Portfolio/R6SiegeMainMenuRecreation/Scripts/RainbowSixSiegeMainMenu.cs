@@ -160,6 +160,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _playlistButtonHighlight.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         _playlistButtonHighlight.transform.localScale = new Vector3(1.15f, 1.15f, 1.15f);
         _playlistButtonFill.transform.localScale = Vector3.one;
+        _playlistButtonFill.color = new Color(0.1882f, 0.6f, 0.8078432f, 1.0f);
         _playlistButtonIcon.transform.localScale = Vector3.one;
         _playlistButtonHighlight.gameObject.SetActive(false);
     }
@@ -167,6 +168,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     public void PlayPlaylistButtonHighlightSequence()
     {
         PlaylistButtonHighlightSequence().Play();
+        PlaylistButtonFillFading();
     }
 
     public void PlayPlaylistButtonUnhighlightSequence()
@@ -183,12 +185,12 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
             .Join(_playlistButtonHighlight.DOFade(1.0f, 0.2f))
             .Pause();
 
-        Sequence lightSweep = DOTween.Sequence();
-        lightSweep
-            .AppendCallback(null)
-            .Append(null)
-            .Join(null)
-            .Pause();
+        //Sequence lightSweep = DOTween.Sequence();
+        //lightSweep
+        //    .AppendCallback(null)
+        //    .Append(null)
+        //    .Join(null)
+        //    .Pause();
 
         Sequence fill = DOTween.Sequence();
         fill
@@ -205,7 +207,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _completePlaylistHighlightSequence
             .AppendCallback(InitializePlaylistButton)
             .Append(highlight)
-            .Join(lightSweep) // TO-DO
+            /*.Join(lightSweep)*/ // TO-DO
             .Join(fill)
             .Join(icon)
             .Pause();
@@ -230,10 +232,20 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _completePlaylistUnhighlightSequence
             .Append(unhighlight)
             .Join(fill)
-            .OnComplete(()=> _playlistButtonHighlight.gameObject.SetActive(false))
+            .OnComplete(()=>
+            {
+                _playlistButtonHighlight.gameObject.SetActive(false);
+                DOTween.KillAll(true);
+                _playlistButtonFill.color = new Color(0.1882f, 0.6f, 0.8078432f, 1.0f);
+            })
             .Pause();
 
         return _completePlaylistUnhighlightSequence;
+    }
+
+    private void PlaylistButtonFillFading()
+    {
+        _playlistButtonFill.DOFade(0.25f, 1.0f).SetLoops(-1, LoopType.Yoyo);
     }
 
     #endregion
