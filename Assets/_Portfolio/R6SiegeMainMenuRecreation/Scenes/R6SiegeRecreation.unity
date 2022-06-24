@@ -2587,26 +2587,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 119590936}
     m_Modifications:
-    - target: {fileID: 8297451171098959546, guid: 5d49ea810dc165148829881c7b14946c,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.62352943
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297451171098959546, guid: 5d49ea810dc165148829881c7b14946c,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297451171098959546, guid: 5d49ea810dc165148829881c7b14946c,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8297451171098959546, guid: 5d49ea810dc165148829881c7b14946c,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8698419970478702708, guid: 5d49ea810dc165148829881c7b14946c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2716,6 +2696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_QueueUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698419970478702711, guid: 5d49ea810dc165148829881c7b14946c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d49ea810dc165148829881c7b14946c, type: 3}
@@ -3546,14 +3531,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 119590936}
     m_Modifications:
     - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1645050843}
@@ -3561,56 +3538,15 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1645050843}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayPlaylistButtonUnhighlightSequence
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RainbowSixSiegeMainMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775211258232660705, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.5019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 6316309028860126051, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7094231034584903529, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 7094231034584903529, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 7094231034584903529, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7094231034584903529, guid: 142e0dccafa72e34b84844c290bfbacf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9187667962593929128, guid: 142e0dccafa72e34b84844c290bfbacf,
         type: 3}
       propertyPath: m_Name
       value: Button_Playlist
+      objectReference: {fileID: 0}
+    - target: {fileID: 9187667962593929128, guid: 142e0dccafa72e34b84844c290bfbacf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9187667962593929129, guid: 142e0dccafa72e34b84844c290bfbacf,
         type: 3}
@@ -6433,6 +6369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Notifications
       objectReference: {fileID: 0}
+    - target: {fileID: 413229597576677814, guid: e6e023a66cbebab43999992d7a837b1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6e023a66cbebab43999992d7a837b1e, type: 3}
 --- !u!1001 &2692775657444911232
@@ -6573,26 +6514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1547525446}
     m_Modifications:
-    - target: {fileID: 1686086626401689583, guid: 50804877879bcd743b2e84be59e2510d,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.62352943
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686086626401689583, guid: 50804877879bcd743b2e84be59e2510d,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9509988
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686086626401689583, guid: 50804877879bcd743b2e84be59e2510d,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686086626401689583, guid: 50804877879bcd743b2e84be59e2510d,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2907267853450756882, guid: 50804877879bcd743b2e84be59e2510d,
         type: 3}
       propertyPath: m_Name
@@ -7071,6 +6992,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button_UbisoftConnect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711878913532461995, guid: 06dd9fadc72b82c4c880798a9f7bf252,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06dd9fadc72b82c4c880798a9f7bf252, type: 3}
