@@ -8,6 +8,14 @@ using DG.Tweening;
 public class RainbowSixSiegeMainMenu : MonoBehaviour
 {
     [Header("Debug")]
+    [SerializeField] private RectTransform _debugSlidingPanel;
+    [SerializeField] private Button _debugToggleButton;
+    [SerializeField] private Button _clickOutButton;
+    [SerializeField] private Image _debugButtonIcon;
+    private bool _isDebugPanelOn = false;
+
+    [Space]
+
     [SerializeField] private Image _mockUp;
     [SerializeField] private Image _mockUpButtonImage;
     private bool _isMockUpOn = true;
@@ -51,11 +59,14 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         //InitializeSplashSequence();
         //PlaySplashSequence();
 
+        InitializeDebugToggle();
+
         _BGM.Play();
 
         _isBGMPlaying = true;
         _isMockUpOn = true;
         _isUIOn = true;
+        _isDebugPanelOn = false;
     }
 
     // Update is called once per frame
@@ -65,6 +76,86 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     }
 
     #region Debug Toggles
+
+    private void InitializeDebugToggle()
+    {
+        var buttonImage = _debugToggleButton.GetComponent<Image>();
+
+        _debugToggleButton.gameObject.SetActive(true);
+        _clickOutButton.gameObject.SetActive(false);
+
+        _debugSlidingPanel.localPosition = new Vector3(1039.5f, 0.0f, 0.0f);
+        buttonImage.color = new Color(0.0f, 0.0f, 0.0f, 0.5019608f);
+        _debugButtonIcon.color = new Color(0.2848765f, 1.0f, 0.0f, 1.0f);
+    }
+
+    public void ToggleDebugPanel()
+    {
+        if (!_isDebugPanelOn)
+        {
+            DebugPanelSlideIn().Play();
+            _isDebugPanelOn = true;
+        }
+        else
+        {
+            DebugPanelSlideOut().Play();
+            _isDebugPanelOn = false;
+        }
+    }
+
+    private Sequence DebugPanelSlideIn()
+    {
+        Sequence slideIn = DOTween.Sequence();
+        slideIn
+            .Append(_debugSlidingPanel.DOLocalMoveX(881.0f, 0.75f))
+            .Pause();
+
+        Sequence buttonFadeOut = DOTween.Sequence();
+        buttonFadeOut
+            .Append(_debugToggleButton.image.DOFade(0.0f, 0.75f))
+            .Join(_debugButtonIcon.DOFade(0.0f, 0.75f))
+            .Pause();
+
+        Sequence completePanelSlideInSequence = DOTween.Sequence();
+        completePanelSlideInSequence
+            .Append(slideIn)
+            .Join(buttonFadeOut)
+            .OnComplete(()=>
+            {
+                _debugToggleButton.gameObject.SetActive(false);
+                _clickOutButton.gameObject.SetActive(true);
+            })
+            .Pause();
+
+        return completePanelSlideInSequence;
+    }
+
+    private Sequence DebugPanelSlideOut()
+    {
+        Sequence slideOut = DOTween.Sequence();
+        slideOut
+            .Append(_debugSlidingPanel.DOLocalMoveX(1039.5f, 0.75f))
+            .Pause();
+
+        Sequence buttonFadeIn = DOTween.Sequence();
+        buttonFadeIn
+            .Append(_debugToggleButton.image.DOFade(0.5019608f, 0.75f))
+            .Join(_debugButtonIcon.DOFade(1.0f, 0.75f))
+            .Pause();
+
+        Sequence completePanelSlideOutSequence = DOTween.Sequence();
+        completePanelSlideOutSequence
+            .AppendCallback(() =>
+            {
+                _clickOutButton.gameObject.SetActive(false);
+                _debugToggleButton.gameObject.SetActive(true);
+            })
+            .Append(slideOut)
+            .Join(buttonFadeIn)
+            .Pause();
+
+        return completePanelSlideOutSequence;
+    }
 
     public void ToggleMockup()
     {
