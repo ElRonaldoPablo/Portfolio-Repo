@@ -75,6 +75,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c45005fb4deb2ca42b5d88b07158c329, type: 3}
   - {fileID: 21300000, guid: fd22c79d1120e754d99a0bf7fbf746ae, type: 3}
   - {fileID: 21300000, guid: d449300f874aef544aee65a3d9f03442, type: 3}
+  - {fileID: 21300000, guid: 581bb56f8d5623d4b9028c514683b4b7, type: 3}
   m_PackedSpriteNamesToIndex:
   - tex_boxArrow
   - tex_playlist_button_icon
@@ -89,6 +90,7 @@ SpriteAtlas:
   - tex_circle_button
   - tex_button_background
   - tex_diamond_plating
+  - tex_boosters_icon
   m_RenderDataMap: {}
   m_Tag: MainMenu
   m_IsVariant: 0

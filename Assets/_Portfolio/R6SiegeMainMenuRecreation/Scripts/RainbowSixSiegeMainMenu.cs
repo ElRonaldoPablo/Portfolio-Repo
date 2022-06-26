@@ -18,7 +18,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
     [SerializeField] private Image _mockUp;
     [SerializeField] private Image _mockUpButtonImage;
-    private bool _isMockUpOn = true;
+    private bool _isMockUpOn = false;
 
     [Space]
 
@@ -51,7 +51,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _BGM.Play();
 
         _isBGMPlaying = true;
-        _isMockUpOn = true;
+        _isMockUpOn = false;
         _isUIOn = true;
         _isDebugPanelOn = false;
     }
