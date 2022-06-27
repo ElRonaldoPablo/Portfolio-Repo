@@ -15,16 +15,19 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     private bool _isDebugPanelOn = false;
 
     [Space]
-
     [SerializeField] private Image _mockUp;
     [SerializeField] private Image _mockUpButtonImage;
     private bool _isMockUpOn = false;
 
     [Space]
-
     [SerializeField] private GameObject[] _uiElements;
     [SerializeField] private Image _uiButtonImage;
     private bool _isUIOn = true;
+
+    [Space]
+    [SerializeField] private RawImage _animatedBG;
+    [SerializeField] private Image _animBGButtonImage;
+    private bool _isAnimatedBGOn = false;
 
     [Header("BGM")]
     [SerializeField] private AudioSource _BGM;
@@ -53,6 +56,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _isBGMPlaying = true;
         _isMockUpOn = false;
         _isUIOn = true;
+        _isAnimatedBGOn = false;
         _isDebugPanelOn = false;
     }
 
@@ -191,6 +195,22 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
             _BGM.Play();
             _isBGMPlaying = true;
             _BGMButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+    }
+
+    public void ToggleAnimatedBG()
+    {
+        if (!_isAnimatedBGOn)
+        {
+            _animatedBG.gameObject.SetActive(true);
+            _isAnimatedBGOn = true;
+            _animBGButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+        else
+        {
+            _animatedBG.gameObject.SetActive(false);
+            _isAnimatedBGOn = false;
+            _animBGButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
         }
     }
 
