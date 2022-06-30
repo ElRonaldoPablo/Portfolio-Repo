@@ -14,17 +14,17 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private Image _debugButtonIcon;
     private bool _isDebugPanelOn = false;
 
-    [Space]
+    [Header("Mockup")]
     [SerializeField] private Image _mockUp;
     [SerializeField] private Image _mockUpButtonImage;
     private bool _isMockUpOn = false;
 
-    [Space]
+    [Header("UI")]
     [SerializeField] private GameObject[] _uiElements;
     [SerializeField] private Image _uiButtonImage;
     private bool _isUIOn = true;
 
-    [Space]
+    [Header("Animated Background")]
     [SerializeField] private RawImage _animatedBG;
     [SerializeField] private Image _animBGButtonImage;
     private bool _isAnimatedBGOn = false;
@@ -33,6 +33,11 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private AudioSource _BGM;
     [SerializeField] private Image _BGMButtonImage;
     private bool _isBGMPlaying = true;
+
+    [Header("Credits")]
+    [SerializeField] private GameObject _creditsPopup;
+    [SerializeField] private Image _creditsButtonImage;
+    private bool _isCreditsDisplayed = false;
 
     [Header("Splash")]
     [SerializeField] private GameObject _splashPanel;
@@ -57,6 +62,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _isMockUpOn = false;
         _isUIOn = true;
         _isAnimatedBGOn = false;
+        _isCreditsDisplayed = false;
+
         _isDebugPanelOn = false;
     }
 
@@ -211,6 +218,22 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
             _animatedBG.gameObject.SetActive(false);
             _isAnimatedBGOn = false;
             _animBGButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+    }
+
+    public void ToggleCredits()
+    {
+        if (!_isCreditsDisplayed)
+        {
+            _creditsPopup.SetActive(true);
+            _isCreditsDisplayed = true;
+            _creditsButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
+        }
+        else
+        {
+            _creditsPopup.SetActive(false);
+            _isCreditsDisplayed = false;
+            _creditsButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
         }
     }
 
