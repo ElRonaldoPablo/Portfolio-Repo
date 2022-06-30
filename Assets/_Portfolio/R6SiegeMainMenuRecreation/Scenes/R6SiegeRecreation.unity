@@ -9187,16 +9187,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Notifications
       objectReference: {fileID: 0}
-    - target: {fileID: 413229597576677814, guid: e6e023a66cbebab43999992d7a837b1e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8983573367660795407, guid: e6e023a66cbebab43999992d7a837b1e,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.5019608
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6e023a66cbebab43999992d7a837b1e, type: 3}
 --- !u!1001 &2692775657444911232
