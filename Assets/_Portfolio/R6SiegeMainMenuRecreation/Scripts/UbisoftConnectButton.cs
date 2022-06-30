@@ -16,6 +16,8 @@ public class UbisoftConnectButton : MonoBehaviour
     [SerializeField] private RectTransform _lightSweep;
     [SerializeField] private Image _arrowBG;
 
+    [SerializeField] private Image[] _cycledIcons;
+
     private Sequence _completeUbiConnectHighlightSequence;
     private Sequence _completeUbiConnectUnhighlightSequence;
 
@@ -23,6 +25,11 @@ public class UbisoftConnectButton : MonoBehaviour
 
     private void InitializeUbisoftConnectButton()
     {
+        foreach (var icon in _cycledIcons)
+        {
+            icon.rectTransform.localScale = Vector3.zero;
+        }
+
         _arrowBG.color = Color.black;
         _highlight.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         _highlight.transform.localScale = new Vector3(1.08f, 1.2f, 2.0f);
@@ -36,7 +43,6 @@ public class UbisoftConnectButton : MonoBehaviour
     public void PlayUbiConnectButtonHighlightSequence()
     {
         UbiConnectButtonHighlightSequence().Play();
-        //QueueButtonFillFading();
     }
 
     public void PlayUbiConnectButtonUnhighlightSequence()
@@ -75,6 +81,25 @@ public class UbisoftConnectButton : MonoBehaviour
             .Join(_connectString.DOLocalMoveX(25.0f, 0.2f))
             .Pause();
 
+        Sequence cycleIcons = DOTween.Sequence();
+        cycleIcons
+            .Append(_cycledIcons[0].rectTransform.DOScale(1.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[0].rectTransform.DOScale(0.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[1].rectTransform.DOScale(1.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[1].rectTransform.DOScale(0.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[2].rectTransform.DOScale(1.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[2].rectTransform.DOScale(0.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[3].rectTransform.DOScale(1.0f, 0.5f))
+            .AppendInterval(0.25f)
+            .Append(_cycledIcons[3].rectTransform.DOScale(0.0f, 0.5f))
+            .Pause();
+
         Sequence ubisoftConnectRevert = DOTween.Sequence();
         ubisoftConnectRevert
             .Append(_ubiString.DOLocalMoveX(0.0f, 0.2f))
@@ -89,7 +114,7 @@ public class UbisoftConnectButton : MonoBehaviour
             .Join(ubisoftConnect)
             .Join(highlightedBG)
             .Join(arrowBackground)
-            .AppendInterval(3.0f)
+            .Join(cycleIcons)
             .Append(ubisoftConnectRevert)
             .Pause();
 
@@ -122,6 +147,15 @@ public class UbisoftConnectButton : MonoBehaviour
 
         _completeUbiConnectUnhighlightSequence = DOTween.Sequence();
         _completeUbiConnectUnhighlightSequence
+            .AppendCallback(()=>
+            {
+                _completeUbiConnectHighlightSequence.Kill(true);
+
+                foreach (var icon in _cycledIcons)
+                {
+                    icon.rectTransform.localScale = Vector3.zero;
+                }
+            })
             .Append(unhighlight)
             .Join(highlightedBG)
             .Join(arrowBackground)
@@ -136,11 +170,5 @@ public class UbisoftConnectButton : MonoBehaviour
         return _completeUbiConnectUnhighlightSequence;
     }
 
-    //private void RotatingCircles()
-    //{
-    //    _queueButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo);
-    //}
-
     #endregion
-
 }

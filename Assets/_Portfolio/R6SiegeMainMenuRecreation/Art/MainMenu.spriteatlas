@@ -75,10 +75,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fa5a7f7a3c161904492712b93881a17f, type: 3}
   - {fileID: 21300000, guid: fc4b3abaa277e2548b03e92ca5e38276, type: 3}
   - {fileID: 21300000, guid: 2ef99ecadc0393c46b036a52e0d6c0d5, type: 3}
+  - {fileID: 21300000, guid: 60a5a1ea7bf40d3469558f4cc25707d1, type: 3}
   - {fileID: 21300000, guid: c45005fb4deb2ca42b5d88b07158c329, type: 3}
   - {fileID: 21300000, guid: fd22c79d1120e754d99a0bf7fbf746ae, type: 3}
+  - {fileID: 21300000, guid: 015c68fed3997e84ab989695cba589f5, type: 3}
   - {fileID: 21300000, guid: d449300f874aef544aee65a3d9f03442, type: 3}
+  - {fileID: 21300000, guid: f06ed82f03d42e84c89852c829a116b9, type: 3}
   - {fileID: 21300000, guid: 581bb56f8d5623d4b9028c514683b4b7, type: 3}
+  - {fileID: 21300000, guid: 3343c3ffba1e72941a48f1754e0902b3, type: 3}
   m_PackedSpriteNamesToIndex:
   - tex_boxArrow
   - tex_playlist_button_icon
@@ -93,10 +97,14 @@ SpriteAtlas:
   - tex_pack_fillCircle
   - tex_bell_icon
   - tex_pack_icon
+  - tex_icon_social
   - tex_circle_button
   - tex_button_background
+  - tex_icon_ranks
   - tex_diamond_plating
+  - tex_icon_gift
   - tex_boosters_icon
+  - tex_icon_target
   m_RenderDataMap: {}
   m_Tag: MainMenu
   m_IsVariant: 0
