@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 512
+      m_MaxTextureSize: 1024
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 1
@@ -64,6 +64,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: f8a6ac31c7b9f9a468be8417c8571ed5, type: 3}
   - {fileID: 21300000, guid: b28941717fdae2f418ccb97c8fb53a2a, type: 3}
+  - {fileID: 21300000, guid: 6c9d5602341cfc245a89cf7c5898671a, type: 3}
   - {fileID: 21300000, guid: a9b57172228047d47ba4d6a63f7b22ba, type: 3}
   - {fileID: 21300000, guid: 596ba61739ebc6e44a696e211bc49e13, type: 3}
   - {fileID: 21300000, guid: e1dbcc47216c37a4a9af0cf89535fa18, type: 3}
@@ -86,6 +87,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - tex_boxArrow
   - tex_playlist_button_icon
+  - tex_icon_trophy
   - tex_box_highlight
   - tex_button_lightsweep
   - tex_glow_circle
