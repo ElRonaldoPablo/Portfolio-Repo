@@ -83,6 +83,13 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
     public void ToggleDebugPanel()
     {
+        if (_isCreditsDisplayed)
+        {
+            _creditsPopup.SetActive(false);
+            _isCreditsDisplayed = false;
+            _creditsButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+
         if (!_isDebugPanelOn)
         {
             DebugPanelSlideIn().Play();
