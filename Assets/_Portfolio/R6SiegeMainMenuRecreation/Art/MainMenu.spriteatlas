@@ -66,6 +66,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b28941717fdae2f418ccb97c8fb53a2a, type: 3}
   - {fileID: 21300000, guid: 6c9d5602341cfc245a89cf7c5898671a, type: 3}
   - {fileID: 21300000, guid: a9b57172228047d47ba4d6a63f7b22ba, type: 3}
+  - {fileID: 21300000, guid: 351662145dc8f9d42aeef5ccb6f7169d, type: 3}
   - {fileID: 21300000, guid: 596ba61739ebc6e44a696e211bc49e13, type: 3}
   - {fileID: 21300000, guid: e1dbcc47216c37a4a9af0cf89535fa18, type: 3}
   - {fileID: 21300000, guid: ee5a3d77c2da0d5498b63e59d958ee0b, type: 3}
@@ -78,6 +79,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2ef99ecadc0393c46b036a52e0d6c0d5, type: 3}
   - {fileID: 21300000, guid: 60a5a1ea7bf40d3469558f4cc25707d1, type: 3}
   - {fileID: 21300000, guid: c45005fb4deb2ca42b5d88b07158c329, type: 3}
+  - {fileID: 21300000, guid: 2552dd3ddc2cad7488d6b8a0a4ca86e1, type: 3}
   - {fileID: 21300000, guid: fd22c79d1120e754d99a0bf7fbf746ae, type: 3}
   - {fileID: 21300000, guid: 015c68fed3997e84ab989695cba589f5, type: 3}
   - {fileID: 21300000, guid: d449300f874aef544aee65a3d9f03442, type: 3}
@@ -89,6 +91,7 @@ SpriteAtlas:
   - tex_playlist_button_icon
   - tex_icon_trophy
   - tex_box_highlight
+  - tex_circleFill
   - tex_button_lightsweep
   - tex_glow_circle
   - tex_pack_emptyCircle
@@ -101,6 +104,7 @@ SpriteAtlas:
   - tex_pack_icon
   - tex_icon_social
   - tex_circle_button
+  - tex_circle
   - tex_button_background
   - tex_icon_ranks
   - tex_diamond_plating
