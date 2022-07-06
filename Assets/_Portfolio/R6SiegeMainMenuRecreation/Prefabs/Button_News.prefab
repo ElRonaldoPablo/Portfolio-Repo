@@ -1083,6 +1083,8 @@ MonoBehaviour:
   _cycleDuration: 5
   _timer: 0
   _tabsParent: {fileID: 1078790874286386763}
+  _activeTab: {fileID: 9206896519599843307}
+  _nextTab: {fileID: 1584588033567806918}
 --- !u!1 &9101808776901692360
 GameObject:
   m_ObjectHideFlags: 0
