@@ -42,6 +42,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [Header("Splash")]
     [SerializeField] private GameObject _splashPanel;
     [SerializeField] private Image _splashBackgroundImage;
+    [SerializeField] private GameObject _signature;
     [SerializeField] private Image _splashFadeImage;
     [SerializeField] private TextMeshProUGUI _splashString;
     [SerializeField] private TextMeshProUGUI _projectDetailsString;
@@ -51,8 +52,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //InitializeSplashSequence();
-        //PlaySplashSequence();
+        InitializeSplashSequence();
+        PlaySplashSequence();
 
         InitializeDebugToggle();
 
@@ -250,12 +251,13 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
     private void InitializeSplashSequence()
     {
-        _splashBackgroundImage.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
-        _splashFadeImage.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
-        _splashString.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+        _splashBackgroundImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        _splashFadeImage.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+        _splashString.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
         _projectDetailsString.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 
         _splashPanel.SetActive(true);
+        _signature.SetActive(true);
 
         Debug.Log("NOTICE | Initilization has been conducted.");
     }
@@ -267,11 +269,16 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
     private Sequence SplashSequence()
     {
-        Sequence fadeIn = DOTween.Sequence();
-        fadeIn
+        Sequence displaySig = DOTween.Sequence();
+        displaySig
             .AppendInterval(2.0f)
             .Append(_splashFadeImage.DOFade(1.0f, 2.0f))
             .AppendInterval(1.5f)
+            .Pause();
+
+        Sequence displayDetails = DOTween.Sequence();
+        displayDetails
+            .AppendCallback(()=> _signature.SetActive(false))
             .Append(_splashFadeImage.DOFade(0.0f, 2.0f))
             .Join(_splashString.DOFade(1.0f, 2.0f))
             .AppendInterval(3.0f)
@@ -293,7 +300,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
 
         _completeSplashSequence = DOTween.Sequence();
         _completeSplashSequence
-            .Append(fadeIn)
+            .Append(displaySig)
+            .Append(displayDetails)
             .Append(fadeOut)
             .Append(projectDetailsFadeIn)
             .Pause();
