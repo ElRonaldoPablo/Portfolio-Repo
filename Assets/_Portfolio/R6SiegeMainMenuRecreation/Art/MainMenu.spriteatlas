@@ -63,10 +63,12 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: f8a6ac31c7b9f9a468be8417c8571ed5, type: 3}
+  - {fileID: 21300000, guid: f74d8a51c3cb2484fb0a5dd1325e92d3, type: 3}
   - {fileID: 21300000, guid: b28941717fdae2f418ccb97c8fb53a2a, type: 3}
   - {fileID: 21300000, guid: 6c9d5602341cfc245a89cf7c5898671a, type: 3}
   - {fileID: 21300000, guid: a9b57172228047d47ba4d6a63f7b22ba, type: 3}
   - {fileID: 21300000, guid: 351662145dc8f9d42aeef5ccb6f7169d, type: 3}
+  - {fileID: 21300000, guid: 0b3a6116937466e47bf8bfd19409001c, type: 3}
   - {fileID: 21300000, guid: 596ba61739ebc6e44a696e211bc49e13, type: 3}
   - {fileID: 21300000, guid: e1dbcc47216c37a4a9af0cf89535fa18, type: 3}
   - {fileID: 21300000, guid: ee5a3d77c2da0d5498b63e59d958ee0b, type: 3}
@@ -88,10 +90,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3343c3ffba1e72941a48f1754e0902b3, type: 3}
   m_PackedSpriteNamesToIndex:
   - tex_boxArrow
+  - tex_playstation_button_l1
   - tex_playlist_button_icon
   - tex_icon_trophy
   - tex_box_highlight
   - tex_circleFill
+  - tex_playstation_button_r1
   - tex_button_lightsweep
   - tex_glow_circle
   - tex_pack_emptyCircle
