@@ -9797,10 +9797,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524779946}
     m_Modifications:
-    - target: {fileID: 856028954176341114, guid: b729aa0e08bf1af4e952f8068d8d79ce,
+    - target: {fileID: 625150693710163077, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
-      propertyPath: m_Color.a
-      value: 0.5019608
+      propertyPath: m_SizeDelta.y
+      value: 346.6729
+      objectReference: {fileID: 0}
+    - target: {fileID: 625150693710163077, guid: b729aa0e08bf1af4e952f8068d8d79ce,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 625150693710163077, guid: b729aa0e08bf1af4e952f8068d8d79ce,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353956, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -9911,6 +9921,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271296831322496331, guid: b729aa0e08bf1af4e952f8068d8d79ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548265944118934787, guid: b729aa0e08bf1af4e952f8068d8d79ce,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0007209778
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
@@ -10426,6 +10446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 197141221}
     m_Modifications:
+    - target: {fileID: 4964116126395008462, guid: 031e202afa762bb4c8872b2e2ea2dfb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8103660693038518154, guid: 031e202afa762bb4c8872b2e2ea2dfb3,
         type: 3}
       propertyPath: m_Pivot.x
