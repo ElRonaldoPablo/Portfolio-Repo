@@ -2173,7 +2173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &524779946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3921,7 +3921,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 20954a7bd2333b84f86308b81ce88fb5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e2808204131e4f640bd8723e998a89df, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -6935,9 +6935,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In Too Deep
+  m_text: 'Ezios Family
 
-    Emir Isilay (ft. Carrah Flahive)'
+    Assassin''s Creed - Rebellion OST'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9638,7 +9638,7 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -9648,7 +9648,7 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -9698,12 +9698,12 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 264.045
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -168.90504
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -9894,7 +9894,7 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
@@ -9904,7 +9904,7 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
@@ -9954,12 +9954,12 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 264.045
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -520.21515
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
