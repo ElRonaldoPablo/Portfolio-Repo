@@ -35,9 +35,15 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     private bool _isBGMPlaying = true;
 
     [Header("Credits")]
+    [SerializeField] private GameObject _popup;
     [SerializeField] private GameObject _creditsPopup;
     [SerializeField] private Image _creditsButtonImage;
     private bool _isCreditsDisplayed = false;
+
+    [Header("Notification")]
+    [SerializeField] private GameObject _notificationPopup;
+    [SerializeField] private GameObject _notificationClickOut;
+    private bool _isNotificationOn = false;
 
     [Header("Splash")]
     [SerializeField] private GameObject _splashPanel;
@@ -52,8 +58,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        InitializeSplashSequence();
-        PlaySplashSequence();
+        //InitializeSplashSequence();
+        //PlaySplashSequence();
 
         InitializeDebugToggle();
 
@@ -64,6 +70,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _isUIOn = true;
         _isAnimatedBGOn = false;
         _isCreditsDisplayed = false;
+        _isNotificationOn = false;
 
         _isDebugPanelOn = false;
     }
@@ -233,15 +240,35 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     {
         if (!_isCreditsDisplayed)
         {
+            _popup.SetActive(true);
             _creditsPopup.SetActive(true);
             _isCreditsDisplayed = true;
             _creditsButtonImage.color = new Color(0.5f, 0.775f, 0.3f, 1.0f);
         }
         else
         {
+            _popup.SetActive(false);
             _creditsPopup.SetActive(false);
             _isCreditsDisplayed = false;
             _creditsButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
+        }
+    }
+
+    public void ToggleNotification()
+    {
+        if (!_isNotificationOn)
+        {
+            _popup.SetActive(true);
+            _notificationPopup.SetActive(true);
+            //_notificationClickOut.gameObject.SetActive(true);
+            _isNotificationOn = true;
+        }
+        else
+        {
+            _popup.SetActive(false);
+            _notificationPopup.SetActive(false);
+            //_notificationClickOut.gameObject.SetActive(false);
+            _isNotificationOn = false;
         }
     }
 
