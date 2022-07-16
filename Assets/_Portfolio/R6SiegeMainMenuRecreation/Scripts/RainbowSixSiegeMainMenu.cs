@@ -38,6 +38,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private GameObject _popup;
     [SerializeField] private GameObject _creditsPopup;
     [SerializeField] private Image _creditsButtonImage;
+    [SerializeField] private GameObject _creditsClickOut;
     private bool _isCreditsDisplayed = false;
 
     [Header("Notification")]
@@ -93,6 +94,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     {
         if (_isCreditsDisplayed)
         {
+            _popup.SetActive(false);
             _creditsPopup.SetActive(false);
             _isCreditsDisplayed = false;
             _creditsButtonImage.color = new Color(0.75f, 0.3f, 0.3f, 1.0f);
@@ -260,14 +262,12 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         {
             _popup.SetActive(true);
             _notificationPopup.SetActive(true);
-            //_notificationClickOut.gameObject.SetActive(true);
             _isNotificationOn = true;
         }
         else
         {
             _popup.SetActive(false);
             _notificationPopup.SetActive(false);
-            //_notificationClickOut.gameObject.SetActive(false);
             _isNotificationOn = false;
         }
     }
