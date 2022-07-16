@@ -4897,6 +4897,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_QueueUp
       objectReference: {fileID: 0}
+    - target: {fileID: 9162685113556128909, guid: 5d49ea810dc165148829881c7b14946c,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d49ea810dc165148829881c7b14946c, type: 3}
 --- !u!224 &1107706324 stripped
@@ -6421,73 +6426,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 119590936}
     m_Modifications:
     - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].eventID
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].eventID
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1645050843}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1645050843}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleNotification
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleNotification
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RainbowSixSiegeMainMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RainbowSixSiegeMainMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1417903962, guid: 142e0dccafa72e34b84844c290bfbacf, type: 3}
-      propertyPath: m_Delegates.Array.data[3].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 9187667962593929128, guid: 142e0dccafa72e34b84844c290bfbacf,
         type: 3}
       propertyPath: m_Name
@@ -10654,6 +10595,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8255654815319905884, guid: e1f7de80012ec2b4ebc264a468799fd0,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f7de80012ec2b4ebc264a468799fd0, type: 3}
 --- !u!1001 &413229598601945531
@@ -10773,6 +10719,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Notifications
       objectReference: {fileID: 0}
+    - target: {fileID: 8677709958823697307, guid: e6e023a66cbebab43999992d7a837b1e,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6e023a66cbebab43999992d7a837b1e, type: 3}
 --- !u!1001 &2692775657444911232
@@ -10782,6 +10733,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524779946}
     m_Modifications:
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].eventID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleNotification
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RainbowSixSiegeMainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163328157, guid: b729aa0e08bf1af4e952f8068d8d79ce, type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353956, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_Name
@@ -11023,6 +11010,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5272195264930328855, guid: 50804877879bcd743b2e84be59e2510d,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50804877879bcd743b2e84be59e2510d, type: 3}
 --- !u!224 &2907267855100960717 stripped
@@ -11148,6 +11140,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].eventID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleNotification
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RainbowSixSiegeMainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946570254380503303, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42e5f87498b29b24a88e1d71cf8eb2cf, type: 3}
 --- !u!1001 &5475367819576914741
@@ -11157,6 +11194,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 280942170}
     m_Modifications:
+    - target: {fileID: 3357947701824380290, guid: ac18773806d1fec468d5b473ef2f2e14,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     - target: {fileID: 7180104156832132344, guid: ac18773806d1fec468d5b473ef2f2e14,
         type: 3}
       propertyPath: m_Pivot.x
@@ -11392,6 +11434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_UbisoftConnect
       objectReference: {fileID: 0}
+    - target: {fileID: 9043416152677445656, guid: 06dd9fadc72b82c4c880798a9f7bf252,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06dd9fadc72b82c4c880798a9f7bf252, type: 3}
 --- !u!1001 &8103660693460770533
@@ -11401,11 +11448,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 197141221}
     m_Modifications:
-    - target: {fileID: 4964116126395008462, guid: 031e202afa762bb4c8872b2e2ea2dfb3,
+    - target: {fileID: 1320078403244938896, guid: 031e202afa762bb4c8872b2e2ea2dfb3,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1645050843}
     - target: {fileID: 8103660693038518154, guid: 031e202afa762bb4c8872b2e2ea2dfb3,
         type: 3}
       propertyPath: m_Pivot.x
