@@ -35,12 +35,12 @@ SpriteAtlas:
       m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     - serializedVersion: 3
       m_BuildTarget: Standalone
-      m_MaxTextureSize: 512
+      m_MaxTextureSize: 256
       m_ResizeAlgorithm: 0
-      m_TextureFormat: 12
+      m_TextureFormat: 25
       m_TextureCompression: 1
       m_CompressionQuality: 50
-      m_CrunchedCompression: 0
+      m_CrunchedCompression: 1
       m_AllowsAlphaSplitting: 0
       m_Overridden: 0
       m_AndroidETC2FallbackOverride: 0
@@ -80,7 +80,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fc4b3abaa277e2548b03e92ca5e38276, type: 3}
   - {fileID: 21300000, guid: 2ef99ecadc0393c46b036a52e0d6c0d5, type: 3}
   - {fileID: 21300000, guid: 60a5a1ea7bf40d3469558f4cc25707d1, type: 3}
-  - {fileID: 21300000, guid: c45005fb4deb2ca42b5d88b07158c329, type: 3}
   - {fileID: 21300000, guid: 2552dd3ddc2cad7488d6b8a0a4ca86e1, type: 3}
   - {fileID: 21300000, guid: fd22c79d1120e754d99a0bf7fbf746ae, type: 3}
   - {fileID: 21300000, guid: 015c68fed3997e84ab989695cba589f5, type: 3}
@@ -89,32 +88,31 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 581bb56f8d5623d4b9028c514683b4b7, type: 3}
   - {fileID: 21300000, guid: 3343c3ffba1e72941a48f1754e0902b3, type: 3}
   m_PackedSpriteNamesToIndex:
-  - tex_boxArrow
-  - tex_playstation_button_l1
-  - tex_playlist_button_icon
-  - tex_icon_trophy
-  - tex_box_highlight
-  - tex_circleFill
-  - tex_playstation_button_r1
-  - tex_button_lightsweep
-  - tex_glow_circle
-  - tex_pack_emptyCircle
-  - tex_arrow
-  - tex_button_ubiBG
-  - tex_invite_button
-  - tex_corner_triangle
-  - tex_pack_fillCircle
-  - tex_bell_icon
-  - tex_pack_icon
-  - tex_icon_social
-  - tex_circle_button
-  - tex_circle
-  - tex_button_background
-  - tex_icon_ranks
-  - tex_diamond_plating
-  - tex_icon_gift
-  - tex_boosters_icon
-  - tex_icon_target
+  - TEX_UI_Box_Arrow
+  - TEX_UI_PLAYSTATION_L1
+  - TEX_UI_Playlist
+  - TEX_UI_Trophy
+  - TEX_UI_GENERIC_Box_Highlight
+  - TEX_UI_GENERIC_Circle_Fill
+  - TEX_UI_PLAYSTATION_R1
+  - TEX_UI_GENERIC_LightSweep
+  - TEX_UI_GENERIC_Circle_Glow
+  - TEX_UI_GENERIC_EmptyCircle
+  - TEX_UI_Arrow
+  - TEX_UI_UbisoftConnect_Background
+  - TEX_UI_PLAYSTATION_Triangle
+  - TEX_UI_GENERIC_CornerTriangle
+  - TEX_UI_GENERIC_FillCircle
+  - TEX_UI_Bell
+  - TEX_UI_Packs
+  - TEX_UI_Social
+  - TEX_UI_GENERIC_Circle
+  - TEX_UI_GENERIC_Square
+  - TEX_UI_Ranks
+  - TEX_UI_DiamondPlating
+  - TEX_UI_Gift
+  - TEX_UI_Boosters
+  - TEX_UI_Target
   m_RenderDataMap: {}
   m_Tag: MainMenu
   m_IsVariant: 0
