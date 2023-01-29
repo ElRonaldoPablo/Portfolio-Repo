@@ -69,7 +69,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _isBGMPlaying = true;
         _isMockUpOn = false;
         _isUIOn = true;
-        _isAnimatedBGOn = false;
+        _isAnimatedBGOn = true;
         _isCreditsDisplayed = false;
         _isNotificationOn = false;
 
