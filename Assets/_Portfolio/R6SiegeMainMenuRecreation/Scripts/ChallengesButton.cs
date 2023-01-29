@@ -16,6 +16,8 @@ public class ChallengesButton : MonoBehaviour
     private Sequence _completeChallengesHighlightSequence;
     private Sequence _completeChallengesUnhighlightSequence;
 
+    private string _loopedIconScalingAnimKill = "LookedIconScalingAnimKill";
+
     #region Challenges Button
 
     private void InitializeChallengesConnectButton()
@@ -79,7 +81,7 @@ public class ChallengesButton : MonoBehaviour
             {
                 _highlight.gameObject.SetActive(false);
                 _icon.rectTransform.localScale = Vector3.one;
-                DOTween.Kill(true);
+                DOTween.Kill(_loopedIconScalingAnimKill, true);
             })
             .Pause();
 
@@ -88,7 +90,7 @@ public class ChallengesButton : MonoBehaviour
 
     private void LoopedIconScaling()
     {
-        _icon.rectTransform.DOScale(1.2f, 1.5f).SetLoops(-1, LoopType.Yoyo);
+        _icon.rectTransform.DOScale(1.2f, 1.5f).SetLoops(-1, LoopType.Yoyo).SetId(_loopedIconScalingAnimKill);
     }
 
     #endregion
