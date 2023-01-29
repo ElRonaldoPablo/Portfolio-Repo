@@ -20,6 +20,7 @@ public class NewsButton : MonoBehaviour
     [SerializeField][Range(0.0f, 12.0f)] private float _cycleDuration = 3.0f;
     [SerializeField] private float _timer;
     private bool _isReadyToCycle;
+    private bool _isPaused = false;
 
     [SerializeField] private RectTransform _tabsParent;
     [SerializeField] private RectTransform _activeTab;
@@ -44,7 +45,10 @@ public class NewsButton : MonoBehaviour
 
     void Update()
     {
-        _timer += Time.deltaTime;
+        if (!_isPaused)
+        {
+            _timer += Time.deltaTime;
+        }
 
         if (_timer >= _cycleDuration)
         {
@@ -71,6 +75,16 @@ public class NewsButton : MonoBehaviour
     public void PlayNewsContentCycling()
     {
         IdleNewsContentCycling().Play();
+    }
+
+    private void PauseNewsContentCycling()
+    {
+        _isPaused = true;
+    }
+
+    private void UnpauseNewsContentCycling()
+    {
+        _isPaused = false;
     }
 
     private Sequence IdleNewsContentCycling()
@@ -115,11 +129,13 @@ public class NewsButton : MonoBehaviour
     public void PlayNewsButtonHighlightSequence()
     {
         NewsButtonHighlightSequence().Play();
+        PauseNewsContentCycling();
     }
 
     public void PlayNewsButtonUnhighlightSequence()
     {
         NewsButtonUnhighlightSequence().Play();
+        UnpauseNewsContentCycling();
     }
 
     private Sequence NewsButtonHighlightSequence()
