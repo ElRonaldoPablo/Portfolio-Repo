@@ -472,7 +472,7 @@ MonoBehaviour:
 
     MAIN MENU RECREATION
 
-    RONALDO PABLO (2022)'
+    RONALDO PABLO (2023)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2541,7 +2541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &524779946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11388,7 +11388,7 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -11398,7 +11398,7 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -11448,12 +11448,12 @@ PrefabInstance:
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 264.045
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -168.90504
       objectReference: {fileID: 0}
     - target: {fileID: 2692775658185353957, guid: b729aa0e08bf1af4e952f8068d8d79ce,
         type: 3}
@@ -11649,7 +11649,7 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
@@ -11659,7 +11659,7 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
@@ -11709,12 +11709,12 @@ PrefabInstance:
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 264.045
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -520.21515
       objectReference: {fileID: 0}
     - target: {fileID: 6579753793059056913, guid: 42e5f87498b29b24a88e1d71cf8eb2cf,
         type: 3}
