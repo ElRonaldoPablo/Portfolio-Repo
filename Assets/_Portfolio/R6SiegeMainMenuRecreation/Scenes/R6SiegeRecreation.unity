@@ -3244,8 +3244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 298.21008, y: -36.4255}
-  m_SizeDelta: {x: 596.4196, y: 72.9}
+  m_AnchoredPosition: {x: 401.55713, y: -36.4255}
+  m_SizeDelta: {x: 389.7255, y: 72.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752332552
 MonoBehaviour:
@@ -8196,7 +8196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ezios Family
+  m_text: 'Ezio''s Family
 
     Assassin''s Creed - Rebellion OST'
   m_isRightToLeft: 0

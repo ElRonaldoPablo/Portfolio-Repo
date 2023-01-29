@@ -85,7 +85,7 @@ public class NotificationsButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _highlight.gameObject.SetActive(false);
-                DOTween.KillAll(true);
+                DOTween.Kill(true);
                 _icon.color = new Color(0.2264151f, 0.2264151f, 0.2264151f, 1.0f);
             })
             .Pause();

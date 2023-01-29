@@ -17,6 +17,8 @@ public class PlaylistButton : MonoBehaviour
     private Sequence _completePlaylistHighlightSequence;
     private Sequence _completePlaylistUnhighlightSequence;
 
+    private string _fadingAnimKill = "_fadingAnimKill";
+
     #region Playlist Button
 
     private void InitializePlaylistButton()
@@ -99,7 +101,7 @@ public class PlaylistButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _playlistButtonHighlight.gameObject.SetActive(false);
-                DOTween.KillAll(true);
+                DOTween.Kill(_fadingAnimKill, true);
                 _playlistButtonFill.color = new Color(0.1882f, 0.6f, 0.8078432f, 1.0f);
             })
             .Pause();
@@ -109,7 +111,7 @@ public class PlaylistButton : MonoBehaviour
 
     private void PlaylistButtonFillFading()
     {
-        _playlistButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo);
+        _playlistButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo).SetId(_fadingAnimKill);
     }
 
     #endregion

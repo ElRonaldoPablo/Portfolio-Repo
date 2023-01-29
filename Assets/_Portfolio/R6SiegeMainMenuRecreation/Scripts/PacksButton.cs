@@ -91,7 +91,7 @@ public class PacksButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _packsButtonHighlight.gameObject.SetActive(false);
-                DOTween.KillAll(true);
+                DOTween.Kill(true);
             })
             .Pause();
 

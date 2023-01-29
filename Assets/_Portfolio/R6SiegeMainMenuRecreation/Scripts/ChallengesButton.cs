@@ -79,7 +79,7 @@ public class ChallengesButton : MonoBehaviour
             {
                 _highlight.gameObject.SetActive(false);
                 _icon.rectTransform.localScale = Vector3.one;
-                DOTween.KillAll(true);
+                DOTween.Kill(true);
             })
             .Pause();
 

@@ -163,7 +163,7 @@ public class UbisoftConnectButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _highlight.gameObject.SetActive(false);
-                DOTween.KillAll(true);
+                DOTween.Kill(true);
             })
             .Pause();
 

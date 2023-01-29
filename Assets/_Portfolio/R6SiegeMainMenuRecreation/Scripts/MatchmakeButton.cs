@@ -17,6 +17,8 @@ public class MatchmakeButton : MonoBehaviour
     private Sequence _completeQueueHighlightSequence;
     private Sequence _completeQueueUnhighlightSequence;
 
+    private string _matchmakeFadingAnimKill = "_fadingAnimKill";
+
     #region Queue Button
 
     private void InitializeQueueButton()
@@ -87,7 +89,7 @@ public class MatchmakeButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _queueButtonHighlight.gameObject.SetActive(false);
-                DOTween.KillAll(true);
+                DOTween.Kill(_matchmakeFadingAnimKill, true);
                 _queueButtonFill.color = new Color(0.1882f, 0.6f, 0.8078432f, 1.0f);
             })
             .Pause();
@@ -97,7 +99,7 @@ public class MatchmakeButton : MonoBehaviour
 
     private void QueueButtonFillFading()
     {
-        _queueButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo);
+        _queueButtonFill.DOFade(0.25f, 2.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo).SetId(_matchmakeFadingAnimKill);
     }
 
     #endregion
