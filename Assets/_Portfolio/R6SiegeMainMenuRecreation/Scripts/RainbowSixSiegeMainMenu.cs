@@ -12,6 +12,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     [SerializeField] private Button _debugToggleButton;
     [SerializeField] private Button _clickOutButton;
     [SerializeField] private Image _debugButtonIcon;
+    [SerializeField] private CanvasGroup _projectDetailsCanvasGroup;
     private bool _isDebugPanelOn = false;
 
     [Header("Mockup")]
@@ -88,6 +89,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         _debugSlidingPanel.localPosition = new Vector3(1039.5f, 0.0f, 0.0f);
         buttonImage.color = new Color(0.0f, 0.0f, 0.0f, 0.5019608f);
         _debugButtonIcon.color = new Color(0.2848765f, 1.0f, 0.0f, 1.0f);
+
+        _projectDetailsCanvasGroup.alpha = 0.0f;
     }
 
     public void ToggleDebugPanel()
@@ -117,6 +120,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         Sequence slideIn = DOTween.Sequence();
         slideIn
             .Append(_debugSlidingPanel.DOLocalMoveX(881.0f, 0.75f))
+            .Join(_projectDetailsCanvasGroup.DOFade(1.0f, 1.0f))
             .Pause();
 
         Sequence buttonFadeOut = DOTween.Sequence();
@@ -150,6 +154,7 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
         buttonFadeIn
             .Append(_debugToggleButton.image.DOFade(0.5019608f, 0.75f))
             .Join(_debugButtonIcon.DOFade(1.0f, 0.75f))
+            .Join(_projectDetailsCanvasGroup.DOFade(0.0f, 1.0f))
             .Pause();
 
         Sequence completePanelSlideOutSequence = DOTween.Sequence();

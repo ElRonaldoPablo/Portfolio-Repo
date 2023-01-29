@@ -499,13 +499,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.5
-  m_fontSizeBase: 19.5
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6839,6 +6839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1390246523}
+  - component: {fileID: 1390246524}
   m_Layer: 5
   m_Name: ProjectDetails
   m_TagString: Untagged
@@ -6867,6 +6868,18 @@ RectTransform:
   m_AnchoredPosition: {x: -960, y: 540}
   m_SizeDelta: {x: 1919.9995, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1390246524
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390246522}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1417903959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8004,6 +8017,7 @@ MonoBehaviour:
   _debugToggleButton: {fileID: 1015972445}
   _clickOutButton: {fileID: 1084189957}
   _debugButtonIcon: {fileID: 403151811}
+  _projectDetailsCanvasGroup: {fileID: 1390246524}
   _mockUp: {fileID: 1979675737}
   _mockUpButtonImage: {fileID: 1715352374}
   _uiElements:
