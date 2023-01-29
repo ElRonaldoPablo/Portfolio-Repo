@@ -20,6 +20,8 @@ public class BoostersButton : MonoBehaviour
     private Sequence _completeBoostersHighlightSequence;
     private Sequence _completeBoostersUnhighlightSequence;
 
+    private string _iconScalingLoopAnimKill = "IconScalingLoopAnimKill";
+
     #region Boosters Button
 
     private void InitializeBoostersButton()
@@ -133,7 +135,7 @@ public class BoostersButton : MonoBehaviour
             .OnComplete(() =>
             {
                 _highlight.gameObject.SetActive(false);
-                DOTween.Kill(true);
+                DOTween.Kill(_iconScalingLoopAnimKill, true);
             })
             .Pause();
 
@@ -142,7 +144,7 @@ public class BoostersButton : MonoBehaviour
 
     private void BoostersIconScaling()
     {
-        _icon.DOScale(1.15f, 1.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo);
+        _icon.DOScale(1.15f, 1.0f).SetDelay(0.2f).SetLoops(-1, LoopType.Yoyo).SetId(_iconScalingLoopAnimKill);
     }
 
     #endregion
