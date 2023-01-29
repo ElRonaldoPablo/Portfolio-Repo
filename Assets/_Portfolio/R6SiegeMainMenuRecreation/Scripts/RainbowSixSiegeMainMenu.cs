@@ -59,8 +59,8 @@ public class RainbowSixSiegeMainMenu : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //InitializeSplashSequence();
-        //PlaySplashSequence();
+        InitializeSplashSequence();
+        PlaySplashSequence();
 
         InitializeDebugToggle();
 
