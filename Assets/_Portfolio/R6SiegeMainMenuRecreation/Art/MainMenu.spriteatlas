@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainMenu
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 25
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 161922eab05d6174a87cc21c9bdfde7d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f8a6ac31c7b9f9a468be8417c8571ed5, type: 3}
+  - {fileID: 21300000, guid: f74d8a51c3cb2484fb0a5dd1325e92d3, type: 3}
+  - {fileID: 21300000, guid: b28941717fdae2f418ccb97c8fb53a2a, type: 3}
+  - {fileID: 21300000, guid: 6c9d5602341cfc245a89cf7c5898671a, type: 3}
+  - {fileID: 21300000, guid: a9b57172228047d47ba4d6a63f7b22ba, type: 3}
+  - {fileID: 21300000, guid: 351662145dc8f9d42aeef5ccb6f7169d, type: 3}
+  - {fileID: 21300000, guid: 0b3a6116937466e47bf8bfd19409001c, type: 3}
+  - {fileID: 21300000, guid: 596ba61739ebc6e44a696e211bc49e13, type: 3}
+  - {fileID: 21300000, guid: e1dbcc47216c37a4a9af0cf89535fa18, type: 3}
+  - {fileID: 21300000, guid: ee5a3d77c2da0d5498b63e59d958ee0b, type: 3}
+  - {fileID: 21300000, guid: 3fc721b73dfe54742a1bafaf01a615be, type: 3}
+  - {fileID: 21300000, guid: 6460c1b723fa2dd4da9d7c74a5002884, type: 3}
+  - {fileID: 21300000, guid: 54cebaf77505485479c56abd43ff2e74, type: 3}
+  - {fileID: 21300000, guid: 9b7a3ee99b84338438825da7a79b743b, type: 3}
+  - {fileID: 21300000, guid: fa5a7f7a3c161904492712b93881a17f, type: 3}
+  - {fileID: 21300000, guid: fc4b3abaa277e2548b03e92ca5e38276, type: 3}
+  - {fileID: 21300000, guid: 2ef99ecadc0393c46b036a52e0d6c0d5, type: 3}
+  - {fileID: 21300000, guid: 60a5a1ea7bf40d3469558f4cc25707d1, type: 3}
+  - {fileID: 21300000, guid: 2552dd3ddc2cad7488d6b8a0a4ca86e1, type: 3}
+  - {fileID: 21300000, guid: fd22c79d1120e754d99a0bf7fbf746ae, type: 3}
+  - {fileID: 21300000, guid: 015c68fed3997e84ab989695cba589f5, type: 3}
+  - {fileID: 21300000, guid: d449300f874aef544aee65a3d9f03442, type: 3}
+  - {fileID: 21300000, guid: f06ed82f03d42e84c89852c829a116b9, type: 3}
+  - {fileID: 21300000, guid: 581bb56f8d5623d4b9028c514683b4b7, type: 3}
+  - {fileID: 21300000, guid: 3343c3ffba1e72941a48f1754e0902b3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - TEX_UI_Box_Arrow
+  - TEX_UI_PLAYSTATION_L1
+  - TEX_UI_Playlist
+  - TEX_UI_Trophy
+  - TEX_UI_GENERIC_Box_Highlight
+  - TEX_UI_GENERIC_Circle_Fill
+  - TEX_UI_PLAYSTATION_R1
+  - TEX_UI_GENERIC_LightSweep
+  - TEX_UI_GENERIC_Circle_Glow
+  - TEX_UI_GENERIC_EmptyCircle
+  - TEX_UI_Arrow
+  - TEX_UI_UbisoftConnect_Background
+  - TEX_UI_PLAYSTATION_Triangle
+  - TEX_UI_GENERIC_CornerTriangle
+  - TEX_UI_GENERIC_FillCircle
+  - TEX_UI_Bell
+  - TEX_UI_Packs
+  - TEX_UI_Social
+  - TEX_UI_GENERIC_Circle
+  - TEX_UI_GENERIC_Square
+  - TEX_UI_Ranks
+  - TEX_UI_DiamondPlating
+  - TEX_UI_Gift
+  - TEX_UI_Boosters
+  - TEX_UI_Target
+  m_RenderDataMap: {}
+  m_Tag: MainMenu
+  m_IsVariant: 0
